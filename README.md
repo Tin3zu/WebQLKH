@@ -1,7 +1,6 @@
-tài khoản đăng nhập
-Quản lý:
+|Quản lý|
 email: admin@example.com
 password: admin123
-Nhân viên:
+|Nhân viên|
 email: team@example.com
 password: team123
