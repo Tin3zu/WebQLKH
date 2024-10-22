@@ -168,7 +168,8 @@ document.getElementById('applyKnowledgeFilter')?.addEventListener('click', funct
 
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc kho tri thức!');
-    window.location.href = '/Sua/khotrithuc/khotrithuc.html';
+   
+
     
     // Đóng modal sau khi áp dụng lọc
     var filterKnowledgeModal = bootstrap.Modal.getInstance(document.getElementById('filterKnowledgeModal'));
@@ -235,7 +236,7 @@ document.getElementById('applyOfferFilter')?.addEventListener('click', function 
 
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc ưu đãi!');
-    window.location.href = '/Sua/uudai/uudai.html';
+  
     
     // Đóng modal sau khi áp dụng lọc
     var filterOfferModal = bootstrap.Modal.getInstance(document.getElementById('filterOfferModal'));
@@ -301,7 +302,7 @@ document.getElementById('applyRateFilter')?.addEventListener('click', function (
 
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc bảng lãi suất!');
-    window.location.href = '/Sua/banglaisuat/banglaisuat.html';
+    
     
     // Đóng modal sau khi áp dụng lọc
     var filterRateModal = bootstrap.Modal.getInstance(document.getElementById('filterRateModal'));
@@ -320,7 +321,7 @@ document.getElementById('themBangLaiSuat')?.addEventListener('click', function (
     const doiTuongApDung = document.getElementById('doiTuongApDung').value;
     const moTa = document.getElementById('moTa').value;
 
-    if (tenBangLaiSuat && laiSuat && ngayBatDau && ngayKetThuc && loaiLaiSuat && soTienVayToiThieu && soTienVayToiDa & doiTuongApDung && moTa) {
+    if (tenBangLaiSuat && laiSuat && ngayBatDau && ngayKetThuc && loaiLaiSuat && soTienVayToiThieu && soTienVayToiDa  ) {
         alert("Lãi suất đã được lưu thành công!");
         window.location.href = '/Sua/banglaisuat/banglaisuat.html';
     } else {
@@ -361,7 +362,7 @@ document.getElementById('applyNotificationFilter')?.addEventListener('click', fu
 
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc thông báo!');
-    window.location.href = '/Sua/thongbao/thongbao.html';
+    
 
     // Đóng modal sau khi áp dụng lọc
     var filterNotificationModal = bootstrap.Modal.getInstance(document.getElementById('filterNotificationModal'));
@@ -420,7 +421,7 @@ document.getElementById('applyAppointmentFilter')?.addEventListener('click', fun
 
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc lịch hẹn!');
-    window.location.href = '/Sua/lichhen/lichhen.html';
+   
 
     // Đóng modal sau khi áp dụng lọc
     var filterAppointmentModal = bootstrap.Modal.getInstance(document.getElementById('filterAppointmentModal'));
@@ -484,7 +485,7 @@ document.getElementById('applyLoanFilter')?.addEventListener('click', function (
 
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc khoản vay!');
-    window.location.href = '/Sua/khoanvay/khoanvay.html';
+   
 
     // Đóng modal sau khi áp dụng lọc
     var filterLoanModal = bootstrap.Modal.getInstance(document.getElementById('filterLoanModal'));
@@ -776,7 +777,7 @@ document.getElementById('luuthongtin')?.addEventListener('click', function () {
 document.getElementById('applyFilter')?.addEventListener('click', function () {
     // Hiển thị thông báo khi áp dụng lọc
     alert('Đã áp dụng bộ lọc!');
-    window.location.href = '/Sua/khachhang/khachhang.html';
+    
 
     // Đóng modal sau khi áp dụng lọc
     var filterModal = new bootstrap.Modal(document.getElementById('filterModal'));
@@ -853,7 +854,7 @@ document.querySelectorAll('.delete-item')?.forEach(item => {
 // Khi nhấn nút "Xác Nhận" trong modal
 document.getElementById('confirmDelete')?.addEventListener('click', function () {
     if (selectedRow) {
-        alert('Xóa hàng Số Điện Thoại thành công');
+        alert('Xóa Số Điện Thoại thành công');
         window.location.href = '/Sua/sodienthoai/sodienthoai.html';
     }
 });
